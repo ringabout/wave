@@ -2,7 +2,7 @@
 """
 Created on Sat May 18 10:11:12 2019
 
-@author: 薄冰
+@author: Python高效编程
 """
 from collections import deque
 from enum import Enum
@@ -59,10 +59,6 @@ def write_wave(path:str, data:bytes, frame_rate:int=44100, frames:int=44100):
                      'NONE', 'uncompressed'))
         w.writeframes(data)
     
-
-    
-
-
 
 def play(path):
     wf = wave.open(path, 'rb')
